@@ -10,6 +10,15 @@ package DAO;
  *
  * @author pierre
  */
-public class ClassRosterDAOException {
+public class ClassRosterDAOException extends Exception
+{
+    
+    public ClassRosterDAOException(String message) {
+        super(message);
+    }
+    
+    public ClassRosterDAOException(String message, Throwable cause) {
+        super(message, cause);
+    }
     
 }
